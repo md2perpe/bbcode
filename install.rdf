@@ -1,0 +1,81 @@
+<?xml version="1.0"?>
+
+<RDF xmlns="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:em="http://www.mozilla.org/2004/em-rdf#">
+
+  <Description about="urn:mozilla:install-manifest">
+    <em:id>{AE37D527-6604-461c-8102-975CF8053A2F}</em:id>
+    <em:version>0.5.2.2</em:version>
+    
+    <em:name>BBCode</em:name>
+    <em:description>Adds Formating (BBCode/HTML/XHTML/etc.) to the context menu for Blogs and forums (PHPBB and others).</em:description>
+    <em:creator>Mel Reyes</em:creator>
+    <em:contributor>Original Author: Jed Brown</em:contributor>
+    <em:homepageURL>http://www.mrtech.com/extensions/#bbcode</em:homepageURL>
+    <em:iconURL>chrome://bbcode/skin/bbcode.png</em:iconURL>
+    <em:optionsURL>chrome://bbcode/content/bbcode_settings.xul</em:optionsURL>
+    <em:aboutURL>chrome://bbcode/content/about.xul</em:aboutURL>
+    
+    <em:file>
+      <Description about="urn:mozilla:extension:file:bbcode.jar">
+        <em:package>content/bbcode/</em:package>
+        <em:locale>locale/en-US/bbcode/</em:locale>
+        <em:locale>locale/ca-AD/bbcode/</em:locale>
+        <em:locale>locale/cs-CZ/bbcode/</em:locale>
+        <em:locale>locale/de-DE/bbcode/</em:locale>
+        <em:locale>locale/es-ES/bbcode/</em:locale>
+        <em:locale>locale/fr-FR/bbcode/</em:locale>
+        <em:locale>locale/hu-HU/bbcode/</em:locale>
+        <em:locale>locale/it-IT/bbcode/</em:locale>
+        <em:locale>locale/ja-JP/bbcode/</em:locale>
+        <em:locale>locale/nl-NL/bbcode/</em:locale>
+        <em:locale>locale/ru-RU/bbcode/</em:locale>
+        <em:locale>locale/pt-BR/bbcode/</em:locale>
+        <em:locale>locale/sv-SE/bbcode/</em:locale>
+        <em:locale>locale/zh-TW/bbcode/</em:locale>
+        <em:skin>skin/classic/bbcode/</em:skin>
+      </Description>
+    </em:file>
+
+    <em:targetApplication> <!-- Firefox -->
+      <Description>
+        <em:id>{ec8030f7-c20a-464f-9b0e-13a3a9e97384}</em:id>
+        <em:minVersion>0.9</em:minVersion>
+        <em:maxVersion>3.0b5pre</em:maxVersion>
+      </Description>
+    </em:targetApplication>
+    
+    <em:targetApplication> <!-- Mozilla Suite -->
+      <Description>
+        <em:id>{86c18b42-e466-45a9-ae7a-9b95ba6f5640}</em:id>
+      <em:minVersion>1.0</em:minVersion>
+        <em:maxVersion>1.8</em:maxVersion>
+      </Description>
+    </em:targetApplication> 
+
+    <em:targetApplication> <!-- SeaMonkey -->
+      <Description>
+        <em:id>{92650c4d-4b8e-4d2a-b7eb-24ecf4f6b63a}</em:id>
+      <em:minVersion>1.0</em:minVersion>
+        <em:maxVersion>2.0a1</em:maxVersion>
+      </Description>
+    </em:targetApplication> 
+
+		<em:targetApplication> <!-- Flock -->
+			<Description>
+				<em:id>{a463f10c-3994-11da-9945-000d60ca027b}</em:id>
+				<em:minVersion>0.7.0</em:minVersion>
+				<em:maxVersion>1.0.*</em:maxVersion>
+			</Description>
+		</em:targetApplication>
+
+		<em:targetApplication> <!-- eMusic -->
+			<Description>
+				<em:id>dlm@emusic.com</em:id>
+				<em:minVersion>1.0</em:minVersion>
+				<em:maxVersion>1.0.0.*</em:maxVersion>
+			</Description>
+		</em:targetApplication>
+
+  </Description>      
+</RDF>

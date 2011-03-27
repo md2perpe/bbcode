@@ -1,0 +1,23 @@
+
+overlay	chrome://browser/content/browser.xul	chrome://bbcode/content/bbcodeOverlay.xul
+overlay	chrome://navigator/content/navigator.xul	chrome://bbcode/content/bbcodeOverlay.xul
+overlay	chrome://emusic/content/startup.xul	chrome://bbcode/content/bbcodeOverlay.xul
+
+content	bbcode	jar:chrome/bbcode.jar!/content/bbcode/
+
+skin	bbcode	classic/1.0	jar:chrome/bbcode.jar!/skin/classic/bbcode/
+
+locale	bbcode	en-US	jar:chrome/bbcode.jar!/locale/en-US/bbcode/
+locale	bbcode	ca-AD	jar:chrome/bbcode.jar!/locale/ca-AD/bbcode/
+locale	bbcode	cs-CZ	jar:chrome/bbcode.jar!/locale/cs-CZ/bbcode/
+locale	bbcode	de-DE	jar:chrome/bbcode.jar!/locale/de-DE/bbcode/
+locale	bbcode	es-ES	jar:chrome/bbcode.jar!/locale/es-ES/bbcode/
+locale	bbcode	fr-FR	jar:chrome/bbcode.jar!/locale/fr-FR/bbcode/
+locale	bbcode	hu-HU	jar:chrome/bbcode.jar!/locale/hu-HU/bbcode/
+locale	bbcode	it-IT	jar:chrome/bbcode.jar!/locale/it-IT/bbcode/
+locale	bbcode	ja-JP	jar:chrome/bbcode.jar!/locale/ja-JP/bbcode/
+locale	bbcode	nl-NL	jar:chrome/bbcode.jar!/locale/nl-NL/bbcode/
+locale	bbcode	pt-BR	jar:chrome/bbcode.jar!/locale/pt-BR/bbcode/
+locale	bbcode	ru-RU	jar:chrome/bbcode.jar!/locale/ru-RU/bbcode/
+locale	bbcode	sv-SE	jar:chrome/bbcode.jar!/locale/sv-SE/bbcode/
+locale	bbcode	zh-TW	jar:chrome/bbcode.jar!/locale/zh-TW/bbcode/
