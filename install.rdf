@@ -5,7 +5,7 @@
 
   <Description about="urn:mozilla:install-manifest">
     <em:id>{AE37D527-6604-461c-8102-975CF8053A2F}</em:id>
-    <em:version>0.5.2.2</em:version>
+    <em:version>0.5.2.3</em:version>
     
     <em:name>BBCode</em:name>
     <em:description>Adds Formating (BBCode/HTML/XHTML/etc.) to the context menu for Blogs and forums (PHPBB and others).</em:description>
@@ -41,7 +41,7 @@
       <Description>
         <em:id>{ec8030f7-c20a-464f-9b0e-13a3a9e97384}</em:id>
         <em:minVersion>0.9</em:minVersion>
-        <em:maxVersion>3.0b5pre</em:maxVersion>
+        <em:maxVersion>4.0</em:maxVersion>
       </Description>
     </em:targetApplication>
     
