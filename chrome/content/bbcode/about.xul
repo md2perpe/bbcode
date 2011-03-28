@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="chrome://global/skin/" type="text/css"?>
+<?xml-stylesheet href="chrome://bbcode/skin/bbcode.css" type="text/css"?>
+
+<window class="dialog"
+    title="About BBCode"
+    orient="vertical"
+    autostretch="always"
+    onload="sizeToContent()"
+    xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul">
+    <script type="application/x-javascript">
+  <![CDATA[//
+    var wm = Components.classes["@mozilla.org/appshell/window-mediator;1"]
+                       .getService(Components.interfaces.nsIWindowMediator);
+    var bbcode_father = wm.getMostRecentWindow("navigator:browser");
+    if (!bbcode_father) { bbcode_father= wm.getMostRecentWindow("emusic:window"); }
+
+    function openBBCHelp(){
+      var bbTab = bbcode_father.gBrowser.addTab("http://www.mrtech.com/extensions/");
+      bbcode_father.getBrowser().selectedTab = bbTab;
+    }
+
+  ]]></script>
+
+<!-- About Template by Jed Brown, if you use it, please give credit where it's due. -->
+
+ <groupbox class="white" align="center" orient="horizontal">
+    <vbox>
+      <hbox>
+      <label style="font-weight: bold; font-size: xx-large; color: #FF9900; padding: 0px; margin: 0px;">bb</label>
+      <label style="font-weight: bold; font-size: xx-large; color: #000000; padding: 0px; margin: 0px;" align="left">code</label>
+      </hbox>
+
+    <tabbox id="tabbox" flex="1" context="">
+      <tabs orient="horizontal">
+        <tab id="bbcode-about" label="About" accesskey="A" collapsed="false"/>
+        <tab id="bbcode-credits" label="Credits" accesskey="C" collapsed="false"/>
+      </tabs>
+      <spacer width="4"/>
+      <tabpanels id="tabpanels" class="wmc_tabpanels" flex="1">	    
+      
+    <!-- / General Panel -->
+    <tabpanel id="bbcode-about-panel-about" orient="vertical" flex="1" context="">
+
+      <separator/>
+      <hbox>
+        <text value="Brought to you by: " style="font-weight: bold;"/>
+        <text value="Mel Reyes" style="font-weight: bold;" class="url"
+            onclick="openBBCHelp(); window.close();"/>
+      </hbox>
+      <separator class="thin"/>
+      <hbox>
+        <text value="Original Author: Jed Brown" style="font-weight: bold;"/>
+      </hbox>
+
+      <separator />
+      <text value="Home Page:" style="font-weight: bold;"/>
+      <text value="http://www.mrtech.com/extensions/" class="url"
+          onclick="openBBCHelp(); window.close();"/>
+
+      </tabpanel>
+      <!-- / Credits Panel -->
+    <tabpanel id="bbcode-about-panel-about" orient="vertical" flex="1" context="">
+    <label style="font-weight:bold" value="A Special Thanks To:"/>
+				<listbox rows="6">
+					<listitem label="Cusser"/>
+          <listitem label="Nickolay Ponomarev (asquella)"/>
+					<listitem label="Ronny Perinke"/>
+					<listitem label="Patrick Wildenborg"/>
+					<listitem label="Simon Willison"/>
+					<listitem label="Mark Wilton-Jones"/>
+				</listbox>
+				<spacer style="height:10px"/>
+    </tabpanel>
+    </tabpanels>
+    </tabbox>
+            
+    </vbox>
+  </groupbox>
+  <hbox align="right">
+    <image src="chrome://bbcode/skin/powered_by_jb.png" orient="horizontal" style="vertical-align: bottom;" onclick="openBBCHelp(); window.close();" />
+  </hbox>
+
+  <vbox align="center">
+    <button label="Close" oncommand="window.close();" align="center" />
+  </vbox>
+
+</window>

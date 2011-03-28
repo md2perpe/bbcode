@@ -1,0 +1,41 @@
+<!ENTITY bbcode.clipboard "Schránka">
+<!ENTITY bbcode.clipkey "C">
+<!ENTITY bbcode.label "Citace">
+<!ENTITY bbcode.image "Obrázek">
+<!ENTITY bbcode.makeurl "URL">
+<!ENTITY bbcode.makeselecturl "URL s popisem">
+<!ENTITY bbcode.accel "Q">
+<!ENTITY bbcode.bold "Tučné">
+<!ENTITY bbcode.italic "Kurzíva">
+<!ENTITY bbcode.underline "Podtrhnout">
+<!ENTITY bbcode.color "Barva">
+<!ENTITY bbcode.code "Kód">
+<!ENTITY bbcode.urlcode "Kód">
+<!ENTITY bbcode.quoteselect "Citace">
+<!ENTITY bbcode.imagealt "Obrázek s popisem">
+<!ENTITY bbcode.urltitle "Vytvořit URL s titulkem">
+<!ENTITY bbcode.list "Vytvořit seznam">
+<!ENTITY bbcode.strike "Přeškrtnout">
+<!ENTITY bbcode.settings.window "Nastavení BBCode">
+<!ENTITY bbcode.settings.context "Místní nabídka">
+<!ENTITY bbcode.settings.enable.bbcode "Povolit BBCode">
+<!ENTITY bbcode.settings.enable.xhtml "Povolit XHTML">
+<!ENTITY bbcode.settings.enable.html "Povolit HTML">
+<!ENTITY bbcode.settings.enable.symbol "Povolit Zvláštní znaky">
+<!ENTITY bbcode.color.choose "Vyberte barvu:">
+<!ENTITY bbcode.size "Velikost písma">
+<!ENTITY bbcode.size.choose "Vyberte velikost:">
+<!ENTITY bbcode.smilies "Smajlíci">
+<!ENTITY bbcode.smileskey "S">
+<!ENTITY bbcode.makemail "Vytvořit e-mail">
+<!ENTITY bbcode.makeselectmail "Vytvořit e-mail z výběru">
+<!ENTITY bbcode.settings "Nastavení">
+<!ENTITY bbcode.settingskey "N">
+<!ENTITY bbcode.settings.tabs.custom "Vlastní značky">
+<!ENTITY bbcode.settings.tabs.custom.key "Z">
+<!ENTITY bbcode.settings.tabs.custom.desc "Zde můžete přidávat vlastní značky do místní nabídky. Zvolte si počet parametrů a doplňte jejich hodnoty u každé značky.">
+<!ENTITY bbcode.settings.tabs.custom.num "Počet vlastních značek:">
+<!ENTITY bbcode.syntax "Zvýraznění syntaxe">
+<!ENTITY bbcode.syntaxjs "Javascriptový kód">
+<!ENTITY bbcode.syntaxxml "XML kód">
+<!ENTITY bbcode.syntaxcss "CSS kód">

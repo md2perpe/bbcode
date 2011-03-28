@@ -1,0 +1,181 @@
+<?xml version="1.0"?>
+<?xml-stylesheet href="chrome://bbcode/skin/bbcode.css" type="text/css"?>
+
+<!DOCTYPE overlay SYSTEM "chrome://bbcode/locale/bbcode.dtd">
+
+<overlay id="bbcodeOverlay" xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul">
+
+  <script type="application/x-javascript" src="chrome://global/content/nsUserSettings.js" />
+  <script type="application/x-javascript" src="chrome://bbcode/content/bbcode.js"/>
+  <script type="application/x-javascript" src="chrome://bbcode/content/syntaxhighlighting.js"/>
+
+  <stringbundleset id="stringbundleset">
+   <stringbundle src="chrome://bbcode/locale/bbcstrings.properties" id="bbcstrings"/>
+  </stringbundleset>
+
+  <popup id="contentAreaContextMenu">
+
+  <menu id="context-bbcode-main" position="1" label="BBCode" class="menuitem-iconic menu-iconic icon-bbcode16" accesskey="B" >
+  <menupopup>
+    <menu id="context-bbcode" position="1" label="BBCode" class="menuitem-iconic menu-iconic icon-bbcode16" accesskey="B" >
+       <menupopup>
+          <menu label="&bbcode.clipboard;" id="context-bbc-clipboard" class="menuitem-iconic menu-iconic" accesskey="&bbcode.clipkey;">
+            <menupopup>
+              <menuitem id="context-bbc-paste" class="menuitem-iconic menu-iconic" label="&bbcode.label;" oncommand="bbcode.bbcode('quoteclip', 'bbcode');"/>
+              <menuitem id="context-bbc-img" class="menuitem-iconic menu-iconic" label="&bbcode.image;" oncommand="bbcode.bbcode('img', 'bbcode');"/>
+              <menuitem id="context-bbc-code" class="menuitem-iconic menu-iconic" label="&bbcode.urlcode;" oncommand="bbcode.bbcode('urlcode', 'bbcode');"/>
+              <menuitem id="context-bbc-url" class="menuitem-iconic menu-iconic" label="&bbcode.makeurl;" oncommand="bbcode.bbcode('url', 'bbcode');"/>
+              <menuitem id="context-bbc-url" class="menuitem-iconic menu-iconic" label="&bbcode.makeselecturl;" oncommand="bbcode.bbcode('urlclip', 'bbcode');"/>
+            </menupopup>
+          </menu>
+
+          <menuitem id="context-bbc-bold" class="menuitem-iconic menu-iconic" label="&bbcode.bold;" oncommand="bbcode.bbcode('bold', 'bbcode');"/>
+          <menuitem id="context-bbc-italic" class="menuitem-iconic menu-iconic" label="&bbcode.italic;" oncommand="bbcode.bbcode('italic', 'bbcode');"/>
+          <menuitem id="context-bbc-underline" class="menuitem-iconic menu-iconic" label="&bbcode.underline;" oncommand="bbcode.bbcode('underline', 'bbcode');"/>
+          <menuitem id="context-bbc-size" class="menuitem-iconic menu-iconic" label="&bbcode.size;" oncommand="bbcode.bbcode('size', 'bbcode');"/>
+          <menuitem id="context-bbc-color" class="menuitem-iconic menu-iconic" label="&bbcode.color;" oncommand="bbcode.bbcode('color', 'bbcode');"/>
+          <menuitem id="context-bbc-code" class="menuitem-iconic menu-iconic" label="&bbcode.code;" oncommand="bbcode.bbcode('code', 'bbcode');"/>
+          <menuitem id="context-bbc-paste" class="menuitem-iconic menu-iconic" label="&bbcode.quoteselect;" oncommand="bbcode.bbcode('quote', 'bbcode');"/>
+          <menuitem id="context-bbc-list" class="menuitem-iconic menu-iconic" label="&bbcode.list;" oncommand="bbcode.bbcode('list', 'bbcode');"/>
+
+          <menu id="context-bbc-syntax" label="&bbcode.syntax;" class="menuitem-iconic menu-iconic" accesskey="">
+            <menupopup>
+              <menuitem id="context-bbc-syntaxjs" class="menuitem-iconic menu-iconic" label="&bbcode.syntaxjs;" oncommand="bbcode.bbcode('syntaxjs', 'bbcode');"/>
+              <menuitem id="context-bbc-syntaxcss" class="menuitem-iconic menu-iconic" label="&bbcode.syntaxcss;" oncommand="bbcode.bbcode('syntaxcss', 'bbcode');"/>
+              <menuitem id="context-bbc-syntaxxml" class="menuitem-iconic menu-iconic" label="&bbcode.syntaxxml;" oncommand="bbcode.bbcode('syntaxxml', 'bbcode');"/>
+            </menupopup>
+          </menu>
+             
+          <menu label="&bbcode.smilies;" class="menuitem-iconic menu-iconic sm-smile" accesskey="&bbcode.smileskey;">
+            <menupopup>
+              <menuitem id="context-bbc-sm-biggrin" label="" tooltiptext=":D" class="menuitem-iconic menu-iconic sm-biggrin" oncommand="bbcode.bbcode(':D', 'bbcode-direct');"/>
+              <menuitem id="context-bbc-sm-smile" label="" tooltiptext=":)" class="menuitem-iconic menu-iconic sm-smile" oncommand="bbcode.bbcode(':)', 'bbcode-direct');"/>
+              <menuitem id="context-bbc-sm-sad" label="" tooltiptext=":(" class="menuitem-iconic menu-iconic sm-sad" oncommand="bbcode.bbcode(':(', 'bbcode-direct');"/>
+              <menuitem id="context-bbc-sm-surprised" label="" tooltiptext=":o" class="menuitem-iconic menu-iconic sm-surprised" oncommand="bbcode.bbcode(':o', 'bbcode-direct');"/>
+              <menuitem id="context-bbc-sm-eek" label="" tooltiptext=":shock:" class="menuitem-iconic menu-iconic sm-eek" oncommand="bbcode.bbcode(':shock:', 'bbcode-direct');"/>
+              <menuitem id="context-bbc-sm-confused" label="" tooltiptext=":?" class="menuitem-iconic menu-iconic sm-confused" oncommand="bbcode.bbcode(':?', 'bbcode-direct');"/>
+              <menuitem id="context-bbc-sm-cool" label="" tooltiptext="8)" class="menuitem-iconic menu-iconic sm-cool" oncommand="bbcode.bbcode('8)', 'bbcode-direct');"/>
+              <menuitem id="context-bbc-sm-lol" label="" tooltiptext=":lol:" class="menuitem-iconic menu-iconic sm-lol" oncommand="bbcode.bbcode(':lol:', 'bbcode-direct');"/>
+              <menuitem id="context-bbc-sm-mad" label="" tooltiptext=":x" class="menuitem-iconic menu-iconic sm-mad" oncommand="bbcode.bbcode(':x', 'bbcode-direct');"/>
+              <menuitem id="context-bbc-sm-razz" label="" tooltiptext=":p:" class="menuitem-iconic menu-iconic sm-razz" oncommand="bbcode.bbcode(':p', 'bbcode-direct');"/>
+              <menuitem id="context-bbc-sm-redface" label="" tooltiptext=":oops:" class="menuitem-iconic menu-iconic sm-redface" oncommand="bbcode.bbcode(':oops:', 'bbcode-direct');"/>
+              <menuitem id="context-bbc-sm-cry" label="" tooltiptext=":cry:" class="menuitem-iconic menu-iconic sm-cry" oncommand="bbcode.bbcode(':cry:', 'bbcode-direct');"/>
+              <menuitem id="context-bbc-sm-evil" label="" tooltiptext=":evil:" class="menuitem-iconic menu-iconic sm-evil" oncommand="bbcode.bbcode(':evil:', 'bbcode-direct');"/>
+              <menuitem id="context-bbc-sm-twisted" label="" tooltiptext=":twisted:" class="menuitem-iconic menu-iconic sm-twisted" oncommand="bbcode.bbcode(':twisted:', 'bbcode-direct');"/>
+              <menuitem id="context-bbc-sm-rolleyes" label="" tooltiptext=":roll:" class="menuitem-iconic menu-iconic sm-rolleyes" oncommand="bbcode.bbcode(':roll:', 'bbcode-direct');"/>
+              <menuitem id="context-bbc-sm-wink" label="" tooltiptext=";)" class="menuitem-iconic menu-iconic sm-wink" oncommand="bbcode.bbcode(';)', 'bbcode-direct');"/>
+              <menuitem id="context-bbc-sm-exclaim" label="" tooltiptext=":!:" class="menuitem-iconic menu-iconic sm-exclaim" oncommand="bbcode.bbcode(':!:', 'bbcode-direct');"/>
+              <menuitem id="context-bbc-sm-question" label="" tooltiptext=":?:" class="menuitem-iconic menu-iconic sm-question" oncommand="bbcode.bbcode(':?:', 'bbcode-direct');"/>
+              <menuitem id="context-bbc-sm-idea" label="" tooltiptext=":idea:" class="menuitem-iconic menu-iconic sm-idea" oncommand="bbcode.bbcode(':idea:', 'bbcode-direct');"/>
+              <menuitem id="context-bbc-sm-arrow" label="" tooltiptext=":arrow:" class="menuitem-iconic menu-iconic sm-arrow" oncommand="bbcode.bbcode(':arrow:', 'bbcode-direct');"/>
+              <menuitem id="context-bbc-sm-neutral" label="" tooltiptext=":|" class="menuitem-iconic menu-iconic sm-neutral" oncommand="bbcode.bbcode(':|', 'bbcode-direct');"/>
+              <menuitem id="context-bbc-sm-mrgreen" label="" tooltiptext=":mrgreen:" class="menuitem-iconic menu-iconic sm-mrgreen" oncommand="bbcode.bbcode(':mrgreen:', 'bbcode-direct');"/>
+            </menupopup>
+          </menu>
+
+          <menuseparator/>
+
+          <menuitem id="context-bbc-settings" insertafter="context-sep-properties" class="menuitem-iconic menu-iconic" label="&bbcode.settings;" hidden = "false" accesskey="&bbcode.settingskey;" oncommand="bbcode.OpenSettings()"/>
+        </menupopup>
+      </menu>
+    
+      <menu id="context-bbcode-html" position="2" label="HTMLCode" class="menuitem-iconic menu-iconic icon-bbcode16" accesskey="H" >
+        <menupopup>
+          <menu label="&bbcode.clipboard;" id="context-bbc-clipboard" class="menuitem-iconic menu-iconic" accesskey="&bbcode.clipkey;">
+            <menupopup>
+              <menuitem id="context-bbc-img" label="&bbcode.image;" class="menuitem-iconic menu-iconic" oncommand="bbcode.bbcode('img', 'html');"/>
+              <menuitem id="context-bbc-img" label="&bbcode.imagealt;" class="menuitem-iconic menu-iconic" oncommand="bbcode.bbcode('imgalt', 'html');"/>
+              <menuitem id="context-bbc-url" label="&bbcode.makeselecturl;" class="menuitem-iconic menu-iconic" oncommand="bbcode.bbcode('urlclip', 'html');"/>
+              <menuitem id="context-bbc-url" label="&bbcode.urltitle;" class="menuitem-iconic menu-iconic" oncommand="bbcode.bbcode('urlcliptitle', 'html');"/>
+              <menuitem id="context-bbc-mail" label="&bbcode.makemail;" class="menuitem-iconic menu-iconic" oncommand="bbcode.bbcode('mail', 'html');"/>
+              <menuitem id="context-bbc-mail" label="&bbcode.makeselectmail;" class="menuitem-iconic menu-iconic" oncommand="bbcode.bbcode('mailclip', 'html');"/>
+            </menupopup>
+          </menu>
+          <menuitem id="context-bbc-bold" label="&bbcode.bold;" class="menuitem-iconic menu-iconic" oncommand="bbcode.bbcode('bold', 'html');"/>
+          <menuitem id="context-bbc-italic" label="&bbcode.italic;" class="menuitem-iconic menu-iconic" oncommand="bbcode.bbcode('italic', 'html');"/>
+          <menuitem id="context-bbc-underline" label="&bbcode.underline;" class="menuitem-iconic menu-iconic" oncommand="bbcode.bbcode('underline', 'html');"/>
+          <menuitem id="context-bbc-size" label="&bbcode.size;" class="menuitem-iconic menu-iconic" oncommand="bbcode.bbcode('size', 'html');"/>
+          <menuitem id="context-bbc-color" label="&bbcode.color;" class="menuitem-iconic menu-iconic" oncommand="bbcode.bbcode('color', 'html');"/>
+          <menuitem id="context-bbc-url" label="&bbcode.makeurl;" class="menuitem-iconic menu-iconic" oncommand="bbcode.bbcode('url', 'html');"/>
+          <menuitem id="context-bbc-url" label="&bbcode.urltitle;" class="menuitem-iconic menu-iconic" oncommand="bbcode.bbcode('urltitle', 'html');"/>
+          <menuitem id="context-bbc-list" label="&bbcode.list;" class="menuitem-iconic menu-iconic" oncommand="bbcode.bbcode('list', 'html');"/>
+          <menuitem id="context-bbc-strike" label="&bbcode.strike;" class="menuitem-iconic menu-iconic" oncommand="bbcode.bbcode('strike', 'html');"/>
+          <menu id="context-bbc-syntax" label="&bbcode.syntax;" class="menuitem-iconic menu-iconic" accesskey="">
+            <menupopup>
+              <menuitem id="context-bbc-syntaxjs" label="&bbcode.syntaxjs;" class="menuitem-iconic menu-iconic" oncommand="bbcode.bbcode('syntaxjs', 'html');"/>
+              <menuitem id="context-bbc-syntaxcss" label="&bbcode.syntaxcss;" class="menuitem-iconic menu-iconic" oncommand="bbcode.bbcode('syntaxcss', 'html');"/>
+              <menuitem id="context-bbc-syntaxxml" label="&bbcode.syntaxxml;" class="menuitem-iconic menu-iconic" oncommand="bbcode.bbcode('syntaxxml', 'html');"/>
+            </menupopup>
+          </menu>
+          <menuseparator/>
+          <menuitem id="context-bbc-settings" insertafter="context-sep-properties" class="menuitem-iconic menu-iconic" label="&bbcode.settings;" hidden = "false" accesskey="&bbcode.settingskey;" oncommand="bbcode.OpenSettings()"/>
+        </menupopup>
+      </menu>
+
+    <menu id="context-bbcode-xhtml" position="3" label="XHTMLCode" class="menuitem-iconic menu-iconic icon-bbcode16" accesskey="X" >
+             <menupopup>
+             <menu label="&bbcode.clipboard;" id="context-bbc-clipboard" class="menuitem-iconic menu-iconic" accesskey="&bbcode.clipkey;">
+              <menupopup>
+                <menuitem id="context-bbc-img" label="&bbcode.image;" class="menuitem-iconic menu-iconic" oncommand="bbcode.bbcode('img', 'xhtml');"/>
+                <menuitem id="context-bbc-img" label="&bbcode.imagealt;" class="menuitem-iconic menu-iconic" oncommand="bbcode.bbcode('imgalt', 'xhtml');"/>
+                <menuitem id="context-bbc-url" label="&bbcode.makeselecturl;" class="menuitem-iconic menu-iconic" oncommand="bbcode.bbcode('urlclip', 'xhtml');"/>
+                <menuitem id="context-bbc-url" label="&bbcode.urltitle;" class="menuitem-iconic menu-iconic" oncommand="bbcode.bbcode('urlcliptitle', 'xhtml');"/>
+                <menuitem id="context-bbc-mail" label="&bbcode.makemail;" class="menuitem-iconic menu-iconic" oncommand="bbcode.bbcode('mail', 'xhtml');"/>
+                <menuitem id="context-bbc-mail" label="&bbcode.makeselectmail;" class="menuitem-iconic menu-iconic" oncommand="bbcode.bbcode('mailclip', 'xhtml');"/>
+                </menupopup>
+             </menu>
+                <menuitem id="context-bbc-bold" label="&bbcode.bold;" class="menuitem-iconic menu-iconic" oncommand="bbcode.bbcode('bold', 'xhtml');"/>
+                <menuitem id="context-bbc-italic" label="&bbcode.italic;" class="menuitem-iconic menu-iconic" oncommand="bbcode.bbcode('italic', 'xhtml');"/>
+                <menuitem id="context-bbc-underline" label="&bbcode.underline;" class="menuitem-iconic menu-iconic" oncommand="bbcode.bbcode('underline', 'xhtml');"/>
+                <menuitem id="context-bbc-size" label="&bbcode.size;" class="menuitem-iconic menu-iconic" oncommand="bbcode.bbcode('size', 'xhtml');"/>
+                <menuitem id="context-bbc-color" label="&bbcode.color;" class="menuitem-iconic menu-iconic" oncommand="bbcode.bbcode('color', 'xhtml');"/>
+                <menuitem id="context-bbc-url" label="&bbcode.makeurl;" class="menuitem-iconic menu-iconic" oncommand="bbcode.bbcode('url', 'xhtml');"/>
+                <menuitem id="context-bbc-url" label="&bbcode.urltitle;" class="menuitem-iconic menu-iconic" oncommand="bbcode.bbcode('urltitle', 'xhtml');"/>
+                <menuitem id="context-bbc-list" label="&bbcode.list;" class="menuitem-iconic menu-iconic" oncommand="bbcode.bbcode('list', 'xhtml');"/>
+                <menuitem id="context-bbc-strike" label="&bbcode.strike;" class="menuitem-iconic menu-iconic" oncommand="bbcode.bbcode('strike', 'xhtml');"/>
+                <menu id="context-bbc-syntax" class="menuitem-iconic menu-iconic" label="&bbcode.syntax;" accesskey="">
+                    <menupopup>
+                        <menuitem id="context-bbc-syntaxjs" label="&bbcode.syntaxjs;" class="menuitem-iconic menu-iconic" oncommand="bbcode.bbcode('syntaxjs', 'xhtml');"/>
+                        <menuitem id="context-bbc-syntaxcss" label="&bbcode.syntaxcss;" class="menuitem-iconic menu-iconic" oncommand="bbcode.bbcode('syntaxcss', 'xhtml');"/>
+                        <menuitem id="context-bbc-syntaxxml" label="&bbcode.syntaxxml;" class="menuitem-iconic menu-iconic" oncommand="bbcode.bbcode('syntaxxml', 'xhtml');"/>
+                    </menupopup>
+                </menu>
+                <menuseparator/>
+                <menuitem id="context-bbc-settings" insertafter="context-sep-properties" class="menuitem-iconic menu-iconic" label="&bbcode.settings;" hidden = "false" accesskey="&bbcode.settingskey;" oncommand="bbcode.OpenSettings()"/>
+             </menupopup>
+      </menu>
+      
+    <menu id="context-bbc-symbols" label="SymbolCode" class="menuitem-iconic menu-iconic" position="4" accesskey="S" >
+             <menupopup>
+                <menuitem id="context-bbc-sm-copyr" class="menuitem-iconic menu-iconic sy-copyr"  oncommand="bbcode.bbcode('copyr', 'symbol');"/>
+                <menuitem id="context-bbc-sm-reg" class="menuitem-iconic menu-iconic sy-reg"  oncommand="bbcode.bbcode('reg', 'symbol');"/>
+                <menuitem id="context-bbc-sm-tm" class="menuitem-iconic menu-iconic sy-tm" oncommand="bbcode.bbcode('tm', 'symbol');"/>
+                <menuitem id="context-bbc-sy-euro" class="menuitem-iconic menu-iconic sy-euro" oncommand="bbcode.bbcode('euro', 'symbol');"/>
+                <menuitem id="context-bbc-sm-cent" class="menuitem-iconic menu-iconic sy-cent" oncommand="bbcode.bbcode('cent', 'symbol');"/>
+                <menuitem id="context-bbc-sm-pound" class="menuitem-iconic menu-iconic sy-pound" oncommand="bbcode.bbcode('pound', 'symbol');"/>
+                <menuitem id="context-bbc-sm-a" class="menuitem-iconic menu-iconic sy-a"  oncommand="bbcode.bbcode('a', 'symbol');"/>
+                <menuitem id="context-bbc-sm-degree" class="menuitem-iconic menu-iconic sy-degree" oncommand="bbcode.bbcode('degree', 'symbol');"/>
+                <menuitem id="context-bbc-sm-square" class="menuitem-iconic menu-iconic sy-square"  oncommand="bbcode.bbcode('square', 'symbol');"/>
+                <menuitem id="context-bbc-sm-cubed" class="menuitem-iconic menu-iconic sy-cubed" oncommand="bbcode.bbcode('cubed', 'symbol');"/>
+                <menuitem id="context-bbc-sm-oneforth" class="menuitem-iconic menu-iconic sy-oneforth" oncommand="bbcode.bbcode('oneforth', 'symbol');"/>
+                <menuitem id="context-bbc-sm-onehalf" class="menuitem-iconic menu-iconic sy-onehalf" oncommand="bbcode.bbcode('onehalf', 'symbol');"/>
+                <menuitem id="context-bbc-sm-threeforth"  class="menuitem-iconic menu-iconic sy-threeforth" oncommand="bbcode.bbcode('threeforth', 'symbol');"/>
+                <menuitem id="context-bbc-sm-divide" class="menuitem-iconic menu-iconic sy-divide" oncommand="bbcode.bbcode('divide', 'symbol');"/>
+                <menuitem id="context-bbc-sm-plusminus" class="menuitem-iconic menu-iconic sy-plusminus" oncommand="bbcode.bbcode('plusminus', 'symbol');"/>
+                <menuseparator/>
+                <menuitem id="context-bbc-settings" insertafter="context-sep-properties" class="menuitem-iconic menu-iconic" label="&bbcode.settings;" hidden = "false" accesskey="&bbcode.settingskey;" oncommand="bbcode.OpenSettings()"/>
+             </menupopup>
+      </menu>
+
+      <menu id="context-bbc-custom" label="&bbcode.settings.tabs.custom;" class="menuitem-iconic menu-iconic" accesskey="&bbcode.settings.tabs.custom.key;" oncommand="">
+            <menupopup id="bbcode_ct_custom_menu" class="menuitem-iconic menu-iconic" onpopupshowing="return bbcode.PopulateCustomImages(event);">
+              <!-- <menuitem id="context-bbc-empty" label="......" class="menuitem-iconic menu-iconic" oncommand="" index="empty"/> -->
+            </menupopup>
+      </menu>
+      <menuseparator/>
+      <menuitem id="context-bbc-settings" insertafter="context-sep-properties" class="menuitem-iconic menu-iconic" label="&bbcode.settings;" hidden = "false" accesskey="&bbcode.settingskey;" oncommand="bbcode.OpenSettings()"/>
+     </menupopup>
+     </menu>
+</popup>
+
+</overlay>

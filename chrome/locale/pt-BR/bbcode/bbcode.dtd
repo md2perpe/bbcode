@@ -1,0 +1,41 @@
+<!ENTITY bbcode.clipboard "Área de Transferência">
+<!ENTITY bbcode.clipkey "C">
+<!ENTITY bbcode.label "Colar Citação">
+<!ENTITY bbcode.image "Imagem">
+<!ENTITY bbcode.makeurl "Criar URL">
+<!ENTITY bbcode.makeselecturl "Criar URL da seleção">
+<!ENTITY bbcode.accel "Q">
+<!ENTITY bbcode.bold "Negrito">
+<!ENTITY bbcode.italic "Itálico">
+<!ENTITY bbcode.underline "Sublinhado">
+<!ENTITY bbcode.color "Cor">
+<!ENTITY bbcode.code "Código">
+<!ENTITY bbcode.urlcode "Código">
+<!ENTITY bbcode.quoteselect "''Citar Seleção''">
+<!ENTITY bbcode.imagealt "Imagem com texto alternativo">
+<!ENTITY bbcode.urltitle "Criar URL com título">
+<!ENTITY bbcode.list "Criar Lista">
+<!ENTITY bbcode.strike "Tachado">
+<!ENTITY bbcode.settings.window "Configurações do BBCode">
+<!ENTITY bbcode.settings.context "Menu de Contexto (clique direito do mouse)">
+<!ENTITY bbcode.settings.enable.bbcode "Ativar BBCode">
+<!ENTITY bbcode.settings.enable.xhtml "Ativar XHTML">
+<!ENTITY bbcode.settings.enable.html "Ativar HTML">
+<!ENTITY bbcode.settings.enable.symbol "Ativar SYMBOLS">
+<!ENTITY bbcode.color.choose "Escolha uma Cor:">
+<!ENTITY bbcode.size "Tamanho da Fonte">
+<!ENTITY bbcode.size.choose "Escolha o Tamanho da Fonte:">
+<!ENTITY bbcode.smilies "Smilies (carinhas)">
+<!ENTITY bbcode.smileskey "S">
+<!ENTITY bbcode.makemail "Criar Mail">
+<!ENTITY bbcode.makeselectmail "Criar Email da Seleção">
+<!ENTITY bbcode.settings "Configurações">
+<!ENTITY bbcode.settingskey "E">
+<!ENTITY bbcode.settings.tabs.custom "Tags Personalizadas">
+<!ENTITY bbcode.settings.tabs.custom.key "T">
+<!ENTITY bbcode.settings.tabs.custom.desc "Aqui você pode adicionar tags personalizadas ao menu de contexto (clique direito do mouse). Escolha quantas entradas você deseja e forneça os valores para cada tag.">
+<!ENTITY bbcode.settings.tabs.custom.num "Número de Tags Personalizadas:">
+<!ENTITY bbcode.syntax "Realçar sintaxe">
+<!ENTITY bbcode.syntaxjs "Código Javascript">
+<!ENTITY bbcode.syntaxxml "Código XML">
+<!ENTITY bbcode.syntaxcss "Código CSS">

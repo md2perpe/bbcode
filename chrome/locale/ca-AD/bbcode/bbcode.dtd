@@ -1,0 +1,41 @@
+<!ENTITY bbcode.clipboard "Porta-retalls">
+<!ENTITY bbcode.clipkey "P">
+<!ENTITY bbcode.label "Enganxa la cita">
+<!ENTITY bbcode.image "Imatge">
+<!ENTITY bbcode.makeurl "Fes una URL">
+<!ENTITY bbcode.makeselecturl "Fes una URL amb la selecció">
+<!ENTITY bbcode.accel "Q">
+<!ENTITY bbcode.bold "Negreta">
+<!ENTITY bbcode.italic "Cursiva">
+<!ENTITY bbcode.underline "Subratllat">
+<!ENTITY bbcode.color "Color">
+<!ENTITY bbcode.code "Codi">
+<!ENTITY bbcode.urlcode "Codi">
+<!ENTITY bbcode.quoteselect "Cita la selecció">
+<!ENTITY bbcode.imagealt "Imatge amb text alternatiu">
+<!ENTITY bbcode.urltitle "Fes una URL amb títol">
+<!ENTITY bbcode.list "Fes una llista">
+<!ENTITY bbcode.strike "Ratllat">
+<!ENTITY bbcode.settings.window "Preferències del bbCode">
+<!ENTITY bbcode.settings.context "Menú contextual">
+<!ENTITY bbcode.settings.enable.bbcode "Habilita el bbCode">
+<!ENTITY bbcode.settings.enable.xhtml "Habilita l'XHTML">
+<!ENTITY bbcode.settings.enable.html "Habilita l'HTML">
+<!ENTITY bbcode.settings.enable.symbol "Habilita els Símbols">
+<!ENTITY bbcode.color.choose "Si us plau, escolliu un color">
+<!ENTITY bbcode.size "Mida de la font">
+<!ENTITY bbcode.size.choose "Si us plau, escolliu una mida per a la font">
+<!ENTITY bbcode.smilies "Emoticones">
+<!ENTITY bbcode.smileskey "S">
+<!ENTITY bbcode.makemail "Fes un correu electrònic">
+<!ENTITY bbcode.makeselectmail "Fes un correu electrònic amb la selecció">
+<!ENTITY bbcode.settings "Preferències">
+<!ENTITY bbcode.settingskey "E">
+<!ENTITY bbcode.settings.tabs.custom "Etiquetes personalitzades">
+<!ENTITY bbcode.settings.tabs.custom.key "P">
+<!ENTITY bbcode.settings.tabs.custom.desc "Ací podeu afegir etiquetes personalitzades al menú contextual. Escolliu quantes en voleu i doneu-ne els valors.">
+<!ENTITY bbcode.settings.tabs.custom.num "Nombre d'etiquetes personalitzades">
+<!ENTITY bbcode.syntax "Ressaltat del codi">
+<!ENTITY bbcode.syntaxjs "Codi Javascript">
+<!ENTITY bbcode.syntaxxml "Codi XML">
+<!ENTITY bbcode.syntaxcss "Codi CSS">

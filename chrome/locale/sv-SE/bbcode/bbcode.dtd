@@ -1,0 +1,44 @@
+<!ENTITY bbcode.clipboard "Urklipp">
+<!ENTITY bbcode.clipkey "K">
+<!ENTITY bbcode.label "Klistra in citat">
+<!ENTITY bbcode.image "Bild">
+<!ENTITY bbcode.makeurl "Skapa URL">
+<!ENTITY bbcode.makeselecturl "Skapa URL från markering">
+<!ENTITY bbcode.accel "Q">
+<!ENTITY bbcode.bold "Fetstil">
+<!ENTITY bbcode.italic "Kursiv">
+<!ENTITY bbcode.underline "Understruken">
+<!ENTITY bbcode.color "Färg">
+<!ENTITY bbcode.code "Kod">
+<!ENTITY bbcode.urlcode "Kod">
+<!ENTITY bbcode.quoteselect "''Citat från markering''">
+<!ENTITY bbcode.imagealt "Bild med alt text">
+<!ENTITY bbcode.urltitle "Skapa URL med titel">
+<!ENTITY bbcode.list "Skapa lista">
+<!ENTITY bbcode.strike "Genomstruken">
+<!ENTITY bbcode.settings.window "BBCode inställningar">
+<!ENTITY bbcode.settings.context "Kontextmeny">
+<!ENTITY bbcode.settings.enable.bbcode "Aktivera BBCode">
+<!ENTITY bbcode.settings.enable.xhtml "Aktivera XHTML">
+<!ENTITY bbcode.settings.enable.html "Aktivera HTML">
+<!ENTITY bbcode.settings.enable.symbol "Aktivera SYMBOLS">
+<!ENTITY bbcode.color.choose "Var god välj en färg:">
+<!ENTITY bbcode.size "Teckenstorlek">
+<!ENTITY bbcode.size.choose "Var god välj teckenstorlek:">
+
+<!ENTITY bbcode.settings.tabs.custom "Custom Tags">
+<!ENTITY bbcode.settings.tabs.custom.key "C">
+<!ENTITY bbcode.settings.tabs.custom.desc "Here you can add custom tags to the context menu. Please choose how many entries you want and provide the values for each tag.">
+<!ENTITY bbcode.settings.tabs.custom.num "Number of Custom Tags:">
+
+<!ENTITY bbcode.syntax "Syntax Highlight">
+<!ENTITY bbcode.syntaxjs "Javascript Code">
+<!ENTITY bbcode.syntaxxml "XML Code">
+<!ENTITY bbcode.syntaxcss "CSS Code">
+
+<!ENTITY bbcode.smilies "Smilies">
+<!ENTITY bbcode.smileskey "S">
+<!ENTITY bbcode.makemail "Skapa epost">
+<!ENTITY bbcode.makeselectmail "Skapa epost från markering">
+<!ENTITY bbcode.settings "Inställningar">
+<!ENTITY bbcode.settingskey "E">

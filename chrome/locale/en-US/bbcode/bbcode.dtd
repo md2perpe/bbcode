@@ -1,0 +1,41 @@
+<!ENTITY bbcode.clipboard "Clipboard">
+<!ENTITY bbcode.clipkey "C">
+<!ENTITY bbcode.label "Paste Quote">
+<!ENTITY bbcode.image "Image">
+<!ENTITY bbcode.makeurl "Make URL">
+<!ENTITY bbcode.makeselecturl "Make Selection URL">
+<!ENTITY bbcode.accel "Q">
+<!ENTITY bbcode.bold "Bold">
+<!ENTITY bbcode.italic "Italic">
+<!ENTITY bbcode.underline "Underline">
+<!ENTITY bbcode.color "Color">
+<!ENTITY bbcode.code "Code">
+<!ENTITY bbcode.urlcode "Code">
+<!ENTITY bbcode.quoteselect "''Quote Selection''">
+<!ENTITY bbcode.imagealt "Image with alt text">
+<!ENTITY bbcode.urltitle "Make URL with title">
+<!ENTITY bbcode.list "Make List">
+<!ENTITY bbcode.strike "Strike">
+<!ENTITY bbcode.settings.window "BBCode Settings">
+<!ENTITY bbcode.settings.context "Context Menu">
+<!ENTITY bbcode.settings.enable.bbcode "Enable BBCode">
+<!ENTITY bbcode.settings.enable.xhtml "Enable XHTML">
+<!ENTITY bbcode.settings.enable.html "Enable HTML">
+<!ENTITY bbcode.settings.enable.symbol "Enable SYMBOLS">
+<!ENTITY bbcode.color.choose "Please Choose a Color:">
+<!ENTITY bbcode.size "Font Size">
+<!ENTITY bbcode.size.choose "Please Choose a Font Size:">
+<!ENTITY bbcode.smilies "Smilies">
+<!ENTITY bbcode.smileskey "S">
+<!ENTITY bbcode.makemail "Make Mail">
+<!ENTITY bbcode.makeselectmail "Make Selection Mail">
+<!ENTITY bbcode.settings "Settings">
+<!ENTITY bbcode.settingskey "E">
+<!ENTITY bbcode.settings.tabs.custom "Custom Tags">
+<!ENTITY bbcode.settings.tabs.custom.key "C">
+<!ENTITY bbcode.settings.tabs.custom.desc "Here you can add custom tags to the context menu. Please choose how many entries you want and provide the values for each tag.">
+<!ENTITY bbcode.settings.tabs.custom.num "Number of Custom Tags:">
+<!ENTITY bbcode.syntax "Syntax Highlight">
+<!ENTITY bbcode.syntaxjs "Javascript Code">
+<!ENTITY bbcode.syntaxxml "XML Code">
+<!ENTITY bbcode.syntaxcss "CSS Code">

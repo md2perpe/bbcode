@@ -1,0 +1,44 @@
+<!ENTITY bbcode.clipboard "Presse-papier">
+<!ENTITY bbcode.clipkey "P"> 
+<!ENTITY bbcode.label "Coller en citant">
+<!ENTITY bbcode.image "Image">
+<!ENTITY bbcode.makeurl "Créer une URL">
+<!ENTITY bbcode.makeselecturl "La sélection en URL">
+<!ENTITY bbcode.accel "s">
+<!ENTITY bbcode.bold "Gras">
+<!ENTITY bbcode.italic "Italique">
+<!ENTITY bbcode.underline "Souligner">
+<!ENTITY bbcode.color "Couleur">
+<!ENTITY bbcode.code "Code">
+<!ENTITY bbcode.urlcode "Code">
+<!ENTITY bbcode.quoteselect "''Citer la sélection''">
+<!ENTITY bbcode.imagealt "Image et texte alternatif">
+<!ENTITY bbcode.urltitle "URL avec un titre">
+<!ENTITY bbcode.list "Liste">
+<!ENTITY bbcode.strike "Barrer">
+<!ENTITY bbcode.settings.window "Réglages de BBCode">
+<!ENTITY bbcode.settings.context "Menu contextuel">
+<!ENTITY bbcode.settings.enable.bbcode "Permettre BBCode">
+<!ENTITY bbcode.settings.enable.xhtml "Permettre XHTML">
+<!ENTITY bbcode.settings.enable.html "Permettre HTML">
+<!ENTITY bbcode.settings.enable.symbol "Permettre les SYMBOLES">
+<!ENTITY bbcode.color.choose "Choisissez la couleur :">
+<!ENTITY bbcode.size "Taille">
+<!ENTITY bbcode.size.choose "Choisissez la taille de la police :">
+
+<!ENTITY bbcode.settings.tabs.custom "Balises personnalisées">
+<!ENTITY bbcode.settings.tabs.custom.key "B">
+<!ENTITY bbcode.settings.tabs.custom.desc "Vous pouvez ajouter ici des balises personnalisées au menu contextuel. Veuillez d'abord choisir le nombre d'entrées souhaitées et fournir ensuite la valeur de chacune d'entre elles.">
+<!ENTITY bbcode.settings.tabs.custom.num "Nombre de balises personnalisées :">
+
+<!ENTITY bbcode.syntax "Colorisation syntaxique">
+<!ENTITY bbcode.syntaxjs "Code Javascript">
+<!ENTITY bbcode.syntaxxml "Code XML">
+<!ENTITY bbcode.syntaxcss "Code CSS">
+
+<!ENTITY bbcode.smilies "Émoticônes">
+<!ENTITY bbcode.smileskey "m">
+<!ENTITY bbcode.makemail "Créer une adresse">
+<!ENTITY bbcode.makeselectmail "Créer une adresse de la sélection">
+<!ENTITY bbcode.settings "Réglages">
+<!ENTITY bbcode.settingskey "R">

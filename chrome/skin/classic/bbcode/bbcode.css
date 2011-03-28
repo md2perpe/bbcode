@@ -1,0 +1,208 @@
+/* icon menus */
+.icon-bbcode16 {
+  list-style-image: url("chrome://bbcode/skin/bbcode_16x16.png");
+}
+
+#context-bbc-bold{
+  font-weight: bold;
+}
+#context-bbc-italic {
+  font-style: italic;
+}
+#context-bbc-underline {
+  text-decoration: underline;
+}
+#context-bbc-color {
+  color: #FF0000;
+}
+#context-bbc-size {
+  text-transform: uppercase;
+}
+/* Menu Icons */
+/* Some Icons thanks to the GNOME OpenOffice 2.0 Icon set */
+#context-bbc-bold {
+  list-style-image: url("chrome://bbcode/skin/menuicons/bold.png");
+}
+#context-bbc-italic {
+  list-style-image: url("chrome://bbcode/skin/menuicons/italic.png");
+}
+#context-bbc-underline {
+  list-style-image: url("chrome://bbcode/skin/menuicons/underline.png");
+}
+#context-bbc-size {
+  list-style-image: url("chrome://bbcode/skin/menuicons/fontsize.png");
+}
+#context-bbc-color {
+  list-style-image: url("chrome://bbcode/skin/menuicons/fontcolor.png");
+}
+#context-bbc-code {
+  list-style-image: url("chrome://bbcode/skin/menuicons/code.png");
+}
+#context-bbc-paste {
+  list-style-image: url("chrome://bbcode/skin/menuicons/quote.png");
+}
+#context-bbc-list {
+  list-style-image: url("chrome://bbcode/skin/menuicons/list.png");
+}
+#context-bbc-syntax {
+  list-style-image: url("chrome://bbcode/skin/menuicons/syntax.png");
+}
+#context-bbc-syntaxjs {
+  list-style-image: url("chrome://bbcode/skin/menuicons/syntaxjs.png");
+}
+#context-bbc-syntaxcss {
+  list-style-image: url("chrome://bbcode/skin/menuicons/syntaxcss.png");
+}
+#context-bbc-syntaxxml {
+  list-style-image: url("chrome://bbcode/skin/menuicons/syntaxxml.png");
+}
+#context-bbc-clipboard {
+  list-style-image: url("chrome://bbcode/skin/menuicons/clipboard.png");
+}
+#context-bbc-img {
+  list-style-image: url("chrome://bbcode/skin/menuicons/image.png");
+}
+#context-bbc-settings {
+  list-style-image: url("chrome://bbcode/skin/menuicons/settings.png");
+}
+#context-bbc-mail {
+  list-style-image: url("chrome://bbcode/skin/menuicons/mailto.png");
+}
+#context-bbc-strike {
+  list-style-image: url("chrome://bbcode/skin/menuicons/strike.png");
+}
+#context-bbc-symbols {
+  list-style-image: url("chrome://bbcode/skin/menuicons/symbols.png");
+}
+#context-bbc-custom {
+  list-style-image: url("chrome://bbcode/skin/menuicons/custom.png");
+}
+#context-bbc-url {
+  list-style-image: url("chrome://bbcode/skin/menuicons/url.png");
+}
+
+/* smilies */
+.sm-arrow {
+  list-style-image: url("chrome://bbcode/skin/icon_arrow.png"); }
+  
+.sm-biggrin {
+  list-style-image: url("chrome://bbcode/skin/icon_biggrin.png"); }
+  
+.sm-confused {
+  list-style-image: url("chrome://bbcode/skin/icon_confused.png"); }
+  
+.sm-cool {
+  list-style-image: url("chrome://bbcode/skin/icon_cool.png"); }
+  
+.sm-cry {
+  list-style-image: url("chrome://bbcode/skin/icon_cry.png"); }
+  
+.sm-eek {
+  list-style-image: url("chrome://bbcode/skin/icon_eek.png"); }
+  
+.sm-evil {
+  list-style-image: url("chrome://bbcode/skin/icon_evil.png"); }
+  
+.sm-exclaim {
+  list-style-image: url("chrome://bbcode/skin/icon_excl.png"); }
+  
+.sm-lol {
+  list-style-image: url("chrome://bbcode/skin/icon_lol.png"); }
+  
+.sm-mad {
+  list-style-image: url("chrome://bbcode/skin/icon_mad.png"); }
+  
+.sm-question {
+  list-style-image: url("chrome://bbcode/skin/icon_question.png"); }
+  
+.sm-razz {
+  list-style-image: url("chrome://bbcode/skin/icon_razz.png"); }
+  
+.sm-redface {
+  list-style-image: url("chrome://bbcode/skin/icon_redface.png"); }
+  
+.sm-rolleyes {
+  list-style-image: url("chrome://bbcode/skin/icon_rolleyes.png"); }
+  
+.sm-sad {
+  list-style-image: url("chrome://bbcode/skin/icon_sad.png"); }
+  
+.sm-smile {
+  list-style-image: url("chrome://bbcode/skin/icon_smile.png"); }
+  
+.sm-surprised {
+  list-style-image: url("chrome://bbcode/skin/icon_surprised.png"); }
+  
+.sm-twisted {
+  list-style-image: url("chrome://bbcode/skin/icon_twisted.png"); }
+  
+.sm-wink {
+  list-style-image: url("chrome://bbcode/skin/icon_wink.png"); }
+
+.sm-neutral {
+  list-style-image: url("chrome://bbcode/skin/icon_neutral.png"); }
+  
+.sm-mrgreen {
+  list-style-image: url("chrome://bbcode/skin/icon_mrgreen.png"); }
+
+.sm-idea{
+  list-style-image: url("chrome://bbcode/skin/icon_idea.png"); }
+  
+  /* Symbols */
+.sy-copyr {
+  list-style-image: url("chrome://bbcode/skin/copyr.png"); }
+  
+.sy-a {
+  list-style-image: url("chrome://bbcode/skin/a.png"); }
+  
+.sy-cent {
+  list-style-image: url("chrome://bbcode/skin/cent.png"); }
+  
+.sy-cubed {
+  list-style-image: url("chrome://bbcode/skin/cubed.png"); }
+  
+.sy-degree {
+  list-style-image: url("chrome://bbcode/skin/degree.png"); }
+  
+.sy-divide {
+  list-style-image: url("chrome://bbcode/skin/divide.png"); }
+  
+.sy-euro {
+  list-style-image: url("chrome://bbcode/skin/euro.png"); }
+  
+.sy-oneforth {
+  list-style-image: url("chrome://bbcode/skin/oneforth.png"); }
+  
+.sy-onehalf {
+  list-style-image: url("chrome://bbcode/skin/onehalf.png"); }
+  
+.sy-plusminus {
+  list-style-image: url("chrome://bbcode/skin/plusminus.png"); }
+  
+.sy-pound {
+  list-style-image: url("chrome://bbcode/skin/pound.png"); }
+  
+.sy-reg {
+  list-style-image: url("chrome://bbcode/skin/reg.png"); }
+  
+.sy-square {
+  list-style-image: url("chrome://bbcode/skin/square.png"); }
+  
+.sy-threeforth {
+  list-style-image: url("chrome://bbcode/skin/threeforth.png"); }
+  
+.sy-tm {
+  list-style-image: url("chrome://bbcode/skin/tm.png"); }
+  
+/* About Window */
+
+.url {
+     cursor: pointer;
+     text-decoration: underline;
+     color: #3A69A6;
+}
+
+.white {
+  background-color: #FFFFFF;
+}
+  

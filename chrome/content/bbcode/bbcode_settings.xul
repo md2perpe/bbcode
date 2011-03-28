@@ -1,0 +1,276 @@
+<?xml version="1.0"?>
+
+<?xml-stylesheet href="chrome://global/skin" type="text/css"?>
+<?xml-stylesheet href="chrome://bbcode/skin/bbcode.css" type="text/css"?>
+
+<!DOCTYPE overlay SYSTEM "chrome://bbcode/locale/bbcode.dtd">
+
+<dialog xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul"
+      title="&bbcode.settings.window;"
+      buttons="help,accept,cancel"
+
+      align="stretch"
+      height="300px" width="500px"
+      maxheight="625px" maxwidth="500px"
+
+      ondialogaccept="bbcodeAccept(); bbcode_father.setTimeout('bbcode.GetUserPrefs()', 100);"
+      ondialoghelp="openBBCHelp();"
+      onload="bbcodeOnLoad();"
+
+      persist="screenX screenY">
+
+  <script type="application/x-javascript" src="chrome://global/content/nsUserSettings.js" />
+  <script type="application/x-javascript" src="chrome://bbcode/content/bbcode.js"/>
+
+  <script type="application/x-javascript">
+  <![CDATA[//
+
+    var _elementIDs = ["bbcode-show-bbcode", "bbcode-show-html", "bbcode-show-xhtml", "bbcode-show-symbol"];
+
+    var wm = Components.classes["@mozilla.org/appshell/window-mediator;1"]
+                       .getService(Components.interfaces.nsIWindowMediator);
+
+    var bbcode_father = wm.getMostRecentWindow("navigator:browser");
+    if (!bbcode_father) { bbcode_father= wm.getMostRecentWindow("emusic:window"); }
+
+    var bbcNumberOfCustom;
+    var bbcNumberOfElementsCreated = 0;
+    function bbcodeOnLoad() {
+      var stringBundle = document.getElementById("bbcstrings");
+      try{
+        document.getElementById("bbcode-show-bbcode").checked = nsPreferences.getBoolPref("bbcode.contextmenu.bbcode");
+        document.getElementById("bbcode-show-xhtml").checked = nsPreferences.getBoolPref("bbcode.contextmenu.xhtml");
+        document.getElementById("bbcode-show-html").checked = nsPreferences.getBoolPref("bbcode.contextmenu.html");
+        document.getElementById("bbcode-show-symbol").checked = nsPreferences.getBoolPref("bbcode.contextmenu.symbol");
+      }catch (e){
+        var alertText = stringBundle.getString("bbcode.settings.loaderr");
+        alert(alertText + e);
+      }           
+
+      if (parent.initPanel) {
+    		parent.initPanel("chrome://bbcode/content/bbcode_settings.xul");
+    	}
+
+      try{
+          document.getElementById("bbcode_number_custom").selectedIndex = nsPreferences.getIntPref("bbcode.tags.custom.number");
+          //alert();
+       }catch (e){
+          var alertText = "Settings Load Error: Please contact the Author";
+          alert(alertText + e);
+      }
+      try{
+        bbcNumberOfCustom = nsPreferences.getIntPref("bbcode.tags.custom.number");
+        populateCustomImages(bbcNumberOfCustom);
+        for (var i=1; i<=bbcNumberOfCustom;++i) {
+          document.getElementById("bc_custom_tb_label_"+i).value = nsPreferences.copyUnicharPref('bbcode.tags.custom.'+i+'.label');
+          document.getElementById("bbcode_ib_url_"+i).value = nsPreferences.copyUnicharPref('bbcode.tags.custom.'+i+'.url');
+        }
+      }catch (e){
+      //Foobar
+      }
+
+      setTimeout(sizeToContent, 250);
+    }
+
+    function bbcodeAccept() {
+      var stringBundle = document.getElementById("bbcstrings");
+      try{
+        BBCode_enableBBCode = document.getElementById("bbcode-show-bbcode").checked;
+        BBCode_enableXHTML = document.getElementById("bbcode-show-xhtml").checked;
+        BBCode_enableHTML = document.getElementById("bbcode-show-html").checked;
+        BBCode_enableSYMBOL = document.getElementById("bbcode-show-symbol").checked;
+        nsPreferences.setBoolPref("bbcode.contextmenu.bbcode", BBCode_enableBBCode);
+        nsPreferences.setBoolPref("bbcode.contextmenu.xhtml", BBCode_enableXHTML);
+        nsPreferences.setBoolPref("bbcode.contextmenu.html", BBCode_enableHTML);
+        nsPreferences.setBoolPref("bbcode.contextmenu.symbol", BBCode_enableSYMBOL);
+      } catch (e){
+          var alertText = stringBundle.getString("bbcode.settings.saveerr");
+          alert(alertText + e);
+      }
+
+      //var alertText = stringBundle.getString("bbcode.settings.onok");
+      //alert(alertText);
+      try{
+          nsPreferences.setIntPref("bbcode.tags.custom.number", document.getElementById("bbcode_number_custom").getAttribute("label"));
+          var bbcNumberOfCustom = document.getElementById("bbcode_number_custom").getAttribute("label");
+          for (var i=1;i<=bbcNumberOfCustom;++i) {
+            nsPreferences.setUnicharPref("bbcode.tags.custom."+i+".label", document.getElementById("bc_custom_tb_label_"+i).value);
+            nsPreferences.setUnicharPref("bbcode.tags.custom."+i+".url", document.getElementById("bbcode_ib_url_"+i).value);
+          }
+      } catch (e) {
+          var alertText = "Settings Save Error: Please Contact the Author";
+          alert(alertText + e);
+      }
+    }
+
+    function populateCustomImages(theNumber){
+      var theIDNode = document.getElementById("bbcode_CustomImages");
+
+      if (theNumber > 0) {
+        document.getElementById("bbcode_custom_input_groupbox").collapsed = false;
+      } else {
+        document.getElementById("bbcode_custom_input_groupbox").collapsed = true;
+      }
+
+      if(theNumber > bbcNumberOfElementsCreated){
+        if (theNumber > 0) {
+      		for (var i= (bbcNumberOfElementsCreated+1);i<=theNumber;++i) {
+            var hbox1 = document.createElement("hbox");
+            var label1 = document.createElement("label");
+            var label2 = document.createElement("label");
+            var textbox1 = document.createElement("textbox");
+            var label3 = document.createElement("label");
+            var textbox2 = document.createElement("textbox");
+
+      			hbox1.setAttribute("id", "" +"hbox_" + i);
+      			hbox1.setAttribute("flex", "1");
+
+        		label1.setAttribute("value","#" + i);
+            label1.setAttribute("id","label1_" + i);
+
+      			label2.setAttribute("value","Label:");
+            label2.setAttribute("id","label2_" + i);
+
+      			textbox1.setAttribute("width","125");
+            textbox1.setAttribute("id","bc_custom_tb_label_"+i);
+      			textbox1.setAttribute("flex", "1");
+      			textbox1.setAttribute("persist", "width");
+
+      			label3.setAttribute("value","Value:");
+            label3.setAttribute("id","label3_" + i);
+
+            textbox2.setAttribute("id","bbcode_ib_url_"+i); // sets id to bbcode_ib_url_#
+            textbox2.setAttribute("width","200");
+      			textbox2.setAttribute("flex", "1");
+      			textbox2.setAttribute("persist", "width");
+
+      			//event.target.appendChild(menuitem);
+            theIDNode.appendChild(hbox1);
+            var theIDNode2 = document.getElementById("hbox_"+i);
+            theIDNode2.appendChild(label1);
+            theIDNode2.appendChild(label2);
+            theIDNode2.appendChild(textbox1);
+            theIDNode2.appendChild(label3);
+            theIDNode2.appendChild(textbox2);
+            bbcNumberOfElementsCreated++;
+            try{
+              document.getElementById("bc_custom_tb_label_"+i).value = unescape(nsPreferences.copyUnicharPref('bbcode.tags.custom.'+i+'.label'));
+              document.getElementById("bbcode_ib_url_"+i).value = unescape(nsPreferences.copyUnicharPref('bbcode.tags.custom.'+i+'.url'));
+            }catch(e){
+            //Foo
+            }
+      		}
+        }
+      } else {
+        //if(theNumber < bbcNumberOfElementsCreated){
+        // If we reduce the number, we need to hide the created elements.
+
+        for (var i=theNumber+1; i<=bbcNumberOfElementsCreated; ++i) {
+          try{
+            //document.getElementById("bc_custom_tb_label_"+i).collapsed = true;
+            //document.getElementById("bbcode_ib_url_"+i).collapsed = true;
+            document.getElementById("hbox_"+i).collapsed = true;
+            
+            //document.getElementById("label1_"+i).collapsed = true;
+            //document.getElementById("label2_"+i).collapsed = true;
+            //document.getElementById("label3_"+i).collapsed = true;
+            //alert("theNumber: "+theNumber+ " bbcNumberOfElementsCreated "+ bbcNumberOfElementsCreated + " i: " +i);
+          }catch(e){
+          //Foo
+          alert("#2 Please report the following to the Author: " + e);
+          }
+        }
+      }
+
+    for (var i=1; i <= theNumber; ++i) {
+      try{
+        //document.getElementById("bc_custom_tb_label_"+i).collapsed = false;
+        //document.getElementById("bbcode_ib_url_"+i).collapsed = false
+        document.getElementById("hbox_"+i).collapsed = false;
+        
+        //document.getElementById("label1_"+i).collapsed = false;
+        //document.getElementById("label2_"+i).collapsed = false;
+        //document.getElementById("label3_"+i).collapsed = false;
+      }catch(e){
+        //Foo
+        alert("#1 Please report the following to the Author: " + e);
+      }
+    }
+
+    setTimeout(window.sizeToContent, 250);
+    }
+
+    function openBBCHelp(){
+      var bbTab = bbcode_father.gBrowser.addTab("http://www.mrtech.com/#bbcode");
+      bbcode_father.getBrowser().selectedTab = bbTab;
+    }
+
+  ]]>
+  </script>
+
+  <stringbundleset id="stringbundleset">
+    <stringbundle src="chrome://bbcode/locale/bbcstrings.properties" id="bbcstrings"/>
+  </stringbundleset>
+
+  <vbox flex="1">
+    <hbox>
+      <image src="chrome://bbcode/skin/bbcode.png" width="32" height="32" />
+      <description style="font-weight: bold; font-size: large;" crop="center">&bbcode.settings.window;</description>
+    </hbox>
+    
+    <separator />
+
+    <vbox flex="1">
+      <groupbox orient="horizontal">
+        <caption label="&bbcode.settings.context;" />
+        <vbox flex="1">
+          <checkbox id="bbcode-show-bbcode" label="&bbcode.settings.enable.bbcode;" checked="true" pref="true" preftype="bool" prefstring="bbcode.contextmenu.bbcode" prefattribute="checked" />
+          <checkbox id="bbcode-show-xhtml" label="&bbcode.settings.enable.xhtml;" checked="true" pref="true" preftype="bool" prefstring="bbcode.contextmenu.xhtml" prefattribute="checked" />
+        </vbox>
+        <vbox flex="1">
+          <checkbox id="bbcode-show-html" label="&bbcode.settings.enable.html;" checked="true" pref="true" preftype="bool" prefstring="bbcode.contextmenu.html" prefattribute="checked" />
+          <checkbox id="bbcode-show-symbol" label="&bbcode.settings.enable.symbol;" checked="true" pref="true" preftype="bool" prefstring="bbcode.contextmenu.symbol" prefattribute="checked" />
+        </vbox>
+      </groupbox>
+
+      <separator />
+
+      <groupbox orient="vertical">
+        <caption label="&bbcode.settings.tabs.custom;" />
+          <vbox flex="1">
+            <description style="font-style: italic; font-size: 11px;" >&bbcode.settings.tabs.custom.desc;</description>
+            <separator />
+            <hbox>
+              <label value="&bbcode.settings.tabs.custom.num;"/>
+              <menulist id="bbcode_number_custom" 
+                oncommand="populateCustomImages(document.getElementById('bbcode_number_custom').selectedIndex);" 
+                editable="false" pref="true" preftype="char" minheight="12px"
+                prefstring="bbcode.tags.custom.number" prefattribute="value">
+                <menupopup>
+                  <menuitem label="0"/>
+                  <menuitem label="1"/>
+                  <menuitem label="2"/>
+                  <menuitem label="3" selected="true"/>
+                  <menuitem label="4"/>
+                  <menuitem label="5"/>
+                  <menuitem label="6"/>
+                  <menuitem label="7"/>
+                  <menuitem label="8"/>
+                  <menuitem label="9"/>
+                  <menuitem label="10"/>
+                </menupopup>
+              </menulist>
+            </hbox>
+            <groupbox id="bbcode_custom_input_groupbox" orient="vertical">
+              <caption label="&bbcode.settings.tabs.custom;"/>
+              <vbox id="bbcode_CustomImages" flex="1" />
+            </groupbox>
+          </vbox>
+      </groupbox>      
+
+    </vbox>
+
+  </vbox>
+
+</dialog>
+

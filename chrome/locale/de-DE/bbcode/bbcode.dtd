@@ -1,0 +1,41 @@
+<!ENTITY bbcode.clipboard "Zwischenablage">
+<!ENTITY bbcode.clipkey "Z">
+<!ENTITY bbcode.label "Zitat einfügen">
+<!ENTITY bbcode.image "Grafik">
+<!ENTITY bbcode.makeurl "URL erstellen">
+<!ENTITY bbcode.makeselecturl "URL aus Auswahl erstellen">
+<!ENTITY bbcode.accel "Q">
+<!ENTITY bbcode.bold "Fett">
+<!ENTITY bbcode.italic "Kursiv">
+<!ENTITY bbcode.underline "Unterstrichen">
+<!ENTITY bbcode.color "Farbe">
+<!ENTITY bbcode.code "Code">
+<!ENTITY bbcode.urlcode "Code">
+<!ENTITY bbcode.quoteselect "&quot;Auswahl als Zitat&quot;">
+<!ENTITY bbcode.imagealt "Grafik mit Alt-Text">
+<!ENTITY bbcode.urltitle "URL mit Titel erstellen">
+<!ENTITY bbcode.list "Liste erstellen">
+<!ENTITY bbcode.strike "Durchgestrichen">
+<!ENTITY bbcode.settings.window "BBCode Einstellungen">
+<!ENTITY bbcode.settings.context "Kontextmenü">
+<!ENTITY bbcode.settings.enable.bbcode "BBCode aktivieren">
+<!ENTITY bbcode.settings.enable.xhtml "XHTML aktivieren">
+<!ENTITY bbcode.settings.enable.html "HTML aktivieren">
+<!ENTITY bbcode.settings.enable.symbol "Zeichen aktivieren">
+<!ENTITY bbcode.color.choose "Farbe wählen:">
+<!ENTITY bbcode.size "Schriftgröße">
+<!ENTITY bbcode.size.choose "Schriftgröße wählen:">
+<!ENTITY bbcode.smilies "Smileys">
+<!ENTITY bbcode.smileskey "S">
+<!ENTITY bbcode.makemail "E-Mail-Adresse erstellen">
+<!ENTITY bbcode.makeselectmail "E-Mail-Adresse aus Auswahl erstellen">
+<!ENTITY bbcode.settings "Einstellungen">
+<!ENTITY bbcode.settingskey "E">
+<!ENTITY bbcode.settings.tabs.custom "Eigene Tags">
+<!ENTITY bbcode.settings.tabs.custom.key "T">
+<!ENTITY bbcode.settings.tabs.custom.desc "Es können eigene Tags zum Kontextmenü hinzugefügt werden. Bitte Anzahl der gewünschten Einträge auswählen und die entsprechenden Werte eintragen.">
+<!ENTITY bbcode.settings.tabs.custom.num "Anzahl der eigenen Tags:">
+<!ENTITY bbcode.syntax "Syntax-Hervorhebung">
+<!ENTITY bbcode.syntaxjs "JavaScript-Code">
+<!ENTITY bbcode.syntaxxml "XML-Code">
+<!ENTITY bbcode.syntaxcss "CSS-Code">

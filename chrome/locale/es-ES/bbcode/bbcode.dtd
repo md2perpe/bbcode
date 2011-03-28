@@ -1,0 +1,41 @@
+<!ENTITY bbcode.clipboard "Portapapeles">
+<!ENTITY bbcode.clipkey "P">
+<!ENTITY bbcode.label "Cita">
+<!ENTITY bbcode.image "Imagen">
+<!ENTITY bbcode.makeurl "Crear URL">
+<!ENTITY bbcode.makeselecturl "Crear URL de selección">
+<!ENTITY bbcode.accel "Q">
+<!ENTITY bbcode.bold "Negrita">
+<!ENTITY bbcode.italic "Cursiva">
+<!ENTITY bbcode.underline "Subrayado">
+<!ENTITY bbcode.color "Color">
+<!ENTITY bbcode.code "Código">
+<!ENTITY bbcode.urlcode "Código">
+<!ENTITY bbcode.quoteselect "''Citar Selección''">
+<!ENTITY bbcode.imagealt "Imagen con texto alterno">
+<!ENTITY bbcode.urltitle "Crear URL con título">
+<!ENTITY bbcode.list "Crear Lista">
+<!ENTITY bbcode.strike "Tachar texto">
+<!ENTITY bbcode.settings.window "Preferencias de BBCode">
+<!ENTITY bbcode.settings.context "Menú de Contexto">
+<!ENTITY bbcode.settings.enable.bbcode "Habilitar BBCode">
+<!ENTITY bbcode.settings.enable.xhtml "Habilitar XHTML">
+<!ENTITY bbcode.settings.enable.html "Habilitar HTML">
+<!ENTITY bbcode.settings.enable.symbol "Habilitar SYMBOLS">
+<!ENTITY bbcode.color.choose "Escoger color:">
+<!ENTITY bbcode.size "Tamaño de Letra">
+<!ENTITY bbcode.size.choose "Escoger Tamaño de Letra:">
+<!ENTITY bbcode.smilies "Emoticones">
+<!ENTITY bbcode.smileskey "C">
+<!ENTITY bbcode.makemail "Crear Correo">
+<!ENTITY bbcode.makeselectmail "Crear Correo de selección">
+<!ENTITY bbcode.settings "Preferencias">
+<!ENTITY bbcode.settingskey "P">
+<!ENTITY bbcode.settings.tabs.custom "Entradas Personalizadas">
+<!ENTITY bbcode.settings.tabs.custom.key "E">
+<!ENTITY bbcode.settings.tabs.custom.desc "Aqui uno puede aggregar elementos o texto personalizado al menu. Favor de escojer la cantidad de entradas que quiere, y aggregar un valor para cada una.">
+<!ENTITY bbcode.settings.tabs.custom.num "Numero de Entradas Personalizadas:">
+<!ENTITY bbcode.syntax "Colorizar Síntesis">
+<!ENTITY bbcode.syntaxjs "Código Javascript">
+<!ENTITY bbcode.syntaxxml "Código XML">
+<!ENTITY bbcode.syntaxcss "Código CSS">

@@ -1,0 +1,41 @@
+<!ENTITY bbcode.clipboard "クリップボード">
+<!ENTITY bbcode.clipkey "C">
+<!ENTITY bbcode.label "引用">
+<!ENTITY bbcode.image "画像">
+<!ENTITY bbcode.makeurl "リンク">
+<!ENTITY bbcode.makeselecturl "選択した部分をリンク">
+<!ENTITY bbcode.accel "Q">
+<!ENTITY bbcode.bold "太字">
+<!ENTITY bbcode.italic "斜体">
+<!ENTITY bbcode.underline "下線">
+<!ENTITY bbcode.color "文字の色">
+<!ENTITY bbcode.code "整形済みテキスト">
+<!ENTITY bbcode.urlcode "整形済みテキスト">
+<!ENTITY bbcode.quoteselect "''選択した部分を引用''">
+<!ENTITY bbcode.imagealt "画像 (ALT テキスト付)">
+<!ENTITY bbcode.urltitle "リンク(タイトル付)">
+<!ENTITY bbcode.list "リスト">
+<!ENTITY bbcode.strike "取り消し線">
+<!ENTITY bbcode.settings.window "BBCode の設定">
+<!ENTITY bbcode.settings.context "コンテキストメニュー">
+<!ENTITY bbcode.settings.enable.bbcode "BBCode を有効">
+<!ENTITY bbcode.settings.enable.xhtml "XHTML を有効">
+<!ENTITY bbcode.settings.enable.html "HTML を有効">
+<!ENTITY bbcode.settings.enable.symbol "記号を有効">
+<!ENTITY bbcode.color.choose "文字の色を選択してください:">
+<!ENTITY bbcode.size "文字の大きさ">
+<!ENTITY bbcode.size.choose "文字の大きさを選択してください:">
+<!ENTITY bbcode.smilies "スマイリー">
+<!ENTITY bbcode.smileskey "S">
+<!ENTITY bbcode.makemail "メールへのリンク">
+<!ENTITY bbcode.makeselectmail "選択した部分をメールへリンク">
+<!ENTITY bbcode.settings "設定">
+<!ENTITY bbcode.settingskey "E">
+<!ENTITY bbcode.settings.tabs.custom "カスタムタグ">
+<!ENTITY bbcode.settings.tabs.custom.key "C">
+<!ENTITY bbcode.settings.tabs.custom.desc "コンテキストメニューにカスタムタグを追加する事が出来ます。使用するカスタムタグの数を決めた後 Label に表示名を Tag に挿入する文字列を入力してください。">
+<!ENTITY bbcode.settings.tabs.custom.num "使用するカスタムタグの数:">
+<!ENTITY bbcode.syntax "構文の強調表示">
+<!ENTITY bbcode.syntaxjs "Javascript">
+<!ENTITY bbcode.syntaxxml "XML">
+<!ENTITY bbcode.syntaxcss "スタイルシート">

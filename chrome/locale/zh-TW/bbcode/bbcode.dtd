@@ -1,0 +1,41 @@
+<!ENTITY bbcode.clipboard "剪貼簿內容貼成">
+<!ENTITY bbcode.clipkey "C">
+<!ENTITY bbcode.label "引用文字">
+<!ENTITY bbcode.image "圖片">
+<!ENTITY bbcode.makeurl "鏈結">
+<!ENTITY bbcode.makeselecturl "鏈結 (插入為選取區的網址)">
+<!ENTITY bbcode.accel "Q">
+<!ENTITY bbcode.bold "粗體">
+<!ENTITY bbcode.italic "斜體">
+<!ENTITY bbcode.underline "底線">
+<!ENTITY bbcode.color "字體顏色">
+<!ENTITY bbcode.code "程式碼">
+<!ENTITY bbcode.urlcode "程式碼">
+<!ENTITY bbcode.quoteselect "引用文字">
+<!ENTITY bbcode.imagealt "圖片 (含 alt 替代文字屬性)">
+<!ENTITY bbcode.urltitle "鏈結 (含 title 提示文字屬性)">
+<!ENTITY bbcode.list "項目清單">
+<!ENTITY bbcode.strike "刪除線">
+<!ENTITY bbcode.settings.window "BBCode 設定">
+<!ENTITY bbcode.settings.context "右鍵選單">
+<!ENTITY bbcode.settings.enable.bbcode "啟用 BBCode">
+<!ENTITY bbcode.settings.enable.xhtml "啟用 XHTML">
+<!ENTITY bbcode.settings.enable.html "啟用 HTML">
+<!ENTITY bbcode.settings.enable.symbol "啟用特殊符號">
+<!ENTITY bbcode.color.choose "請選擇一個顏色：">
+<!ENTITY bbcode.size "字體大小">
+<!ENTITY bbcode.size.choose "請選擇一個字體大小：">
+<!ENTITY bbcode.smilies "表情符號">
+<!ENTITY bbcode.smileskey "S">
+<!ENTITY bbcode.makemail "電子郵件鏈結">
+<!ENTITY bbcode.makeselectmail "電子郵件鏈結 (插入為選取區的郵件地址)">
+<!ENTITY bbcode.settings "設定">
+<!ENTITY bbcode.settingskey "E">
+<!ENTITY bbcode.settings.tabs.custom "自訂標籤">
+<!ENTITY bbcode.settings.tabs.custom.key "C">
+<!ENTITY bbcode.settings.tabs.custom.desc "您可以在這裡將自訂標籤加入右鍵選單中。請先選擇自訂標籤的數目，然後在欄位中輸入標籤的名稱與內容。">
+<!ENTITY bbcode.settings.tabs.custom.num "自訂標籤數目：">
+<!ENTITY bbcode.syntax "語法高亮">
+<!ENTITY bbcode.syntaxjs "Javascript 程式碼">
+<!ENTITY bbcode.syntaxxml "XML 程式碼">
+<!ENTITY bbcode.syntaxcss "CSS 程式碼">

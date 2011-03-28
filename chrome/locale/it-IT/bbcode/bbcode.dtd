@@ -1,0 +1,41 @@
+<!ENTITY bbcode.clipboard "Appunti">
+<!ENTITY bbcode.clipkey "A">
+<!ENTITY bbcode.label "Incolla citazione">
+<!ENTITY bbcode.image "Immagine">
+<!ENTITY bbcode.makeurl "URL">
+<!ENTITY bbcode.makeselecturl "Crea URL da selezione">
+<!ENTITY bbcode.accel "Q">
+<!ENTITY bbcode.bold "Grassetto">
+<!ENTITY bbcode.italic "Corsivo">
+<!ENTITY bbcode.underline "Sottolineato">
+<!ENTITY bbcode.color "Colore">
+<!ENTITY bbcode.code "Codice">
+<!ENTITY bbcode.urlcode "Codice">
+<!ENTITY bbcode.quoteselect "Citazione da selezione">
+<!ENTITY bbcode.imagealt "Immagine con testo alternativo">
+<!ENTITY bbcode.urltitle "URL con nome">
+<!ENTITY bbcode.list "Elenco">
+<!ENTITY bbcode.strike "Barrato">
+<!ENTITY bbcode.settings.window "Opzioni BBCode">
+<!ENTITY bbcode.settings.context "Menu contenuti">
+<!ENTITY bbcode.settings.enable.bbcode "Abilita BBCode">
+<!ENTITY bbcode.settings.enable.xhtml "Abilita XHTML">
+<!ENTITY bbcode.settings.enable.html "Abilita HTML">
+<!ENTITY bbcode.settings.enable.symbol "Abilita SIMBOLI">
+<!ENTITY bbcode.color.choose "Scegli un colore:">
+<!ENTITY bbcode.size "Dimensione testo">
+<!ENTITY bbcode.size.choose "Scegli la dimensione del testo:">
+<!ENTITY bbcode.smilies "Faccine">
+<!ENTITY bbcode.smileskey "F">
+<!ENTITY bbcode.makemail "Crea email">
+<!ENTITY bbcode.makeselectmail "Crea email da selezione">
+<!ENTITY bbcode.settings "Opzioni">
+<!ENTITY bbcode.settingskey "O">
+<!ENTITY bbcode.settings.tabs.custom "Tag personali">
+<!ENTITY bbcode.settings.tabs.custom.key "T">
+<!ENTITY bbcode.settings.tabs.custom.desc "Qui puoi aggiungere dei tag personali al menu contestuale. Scegli quante voci desideri aggiungere e inserisci i codici per ciascun tag.">
+<!ENTITY bbcode.settings.tabs.custom.num "Numero di tag personali:">
+<!ENTITY bbcode.syntax "Evidenzia sintassi">
+<!ENTITY bbcode.syntaxjs "Codice Javascript">
+<!ENTITY bbcode.syntaxxml "Codice XML">
+<!ENTITY bbcode.syntaxcss "Codice CSS">

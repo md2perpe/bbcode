@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+<overlay id="bbcodePrefs" 
+        xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul">
+  
+  <treechildren id="panelChildren">
+	  <treeitem id="bbcodePrefTree">
+      <treerow>
+      <treecell url="chrome://bbcode/content/bbcode_settings.xul" label="BBCode"/> 
+      </treerow>
+    </treeitem>
+  </treechildren>
+
+</overlay>

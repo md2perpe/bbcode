@@ -1,0 +1,54 @@
+<?xml version="1.0"?> 
+<?xml-stylesheet href="chrome://communicator/skin/" type="text/css"?>
+<?xml-stylesheet href="chrome://global/skin" type="text/css"?>
+<?xml-stylesheet href="chrome://bbcode/skin/bbcode.css" type="text/css"?>
+<!DOCTYPE overlay SYSTEM "chrome://bbcode/locale/bbcode.dtd">
+<dialog xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul"
+      width="300" height="250"
+      autostretch="always"
+      persist="screenX screenY width height sizemode"
+      buttons="help,accept,cancel"
+      ondialogaccept="document.getElementById('bbcode_settings_page').contentDocument.defaultView.bbcodeAccept(); bbcode_father.setTimeout('bbcode.GetUserPrefs()', 10);"
+      ondialoghelp="openBBCHelp();"
+      title="&bbcode.settings.window;">
+
+  <script type="application/x-javascript" src="chrome://global/content/nsUserSettings.js" />
+      
+  <script type="application/x-javascript">
+    <![CDATA[//
+    ////////////
+      //Prefs opened via the EM so:
+      var fromEM = null;
+      try{
+        fromEM = window.arguments[0];
+      }catch (e){
+      // foo
+      }
+      
+      var bbcode_father;
+      if(fromEM == null){
+        //From EM
+        bbcode_father = window.opener.opener;
+      }else{
+        //From the Context-Menu
+        bbcode_father = window.opener;
+      }
+      
+      var fromEM = null;
+
+    try{
+      fromEM = window.arguments[0];
+    }catch (e){
+    // foo
+    }
+
+    function openBBCHelp(){
+      var bbTab = bbcode_father.gBrowser.addTab("http://extensions.jedbrown.net/");
+      bbcode_father.getBrowser().selectedTab = bbTab;
+    }
+    ////////////
+    ]]>
+  </script>
+	  <iframe flex="1" src="chrome://bbcode/content/bbcode_settings.xul" id="bbcode_settings_page"/>
+
+</dialog>

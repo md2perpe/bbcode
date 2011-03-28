@@ -1,0 +1,41 @@
+<!ENTITY bbcode.clipboard "Beillesztés vágólapról">
+<!ENTITY bbcode.clipkey "V">
+<!ENTITY bbcode.label "Idézetként">
+<!ENTITY bbcode.image "Képként">
+<!ENTITY bbcode.makeurl "Hivatkozásként">
+<!ENTITY bbcode.makeselecturl "Kijelölés hivatkozásaként">
+<!ENTITY bbcode.accel "Q">
+<!ENTITY bbcode.bold "Félkövér">
+<!ENTITY bbcode.italic "Dőlt">
+<!ENTITY bbcode.underline "Aláhúzott">
+<!ENTITY bbcode.color "Szín">
+<!ENTITY bbcode.code "Kód">
+<!ENTITY bbcode.urlcode "Kódként">
+<!ENTITY bbcode.quoteselect "''Idézet''">
+<!ENTITY bbcode.imagealt "Képként címkével">
+<!ENTITY bbcode.urltitle "Kijelölés hivatkozásaként címkével">
+<!ENTITY bbcode.list "Lista">
+<!ENTITY bbcode.strike "Áthúzott">
+<!ENTITY bbcode.settings.window "BBCode beállítások">
+<!ENTITY bbcode.settings.context "Környezetérzékeny menü">
+<!ENTITY bbcode.settings.enable.bbcode "BBCode engedélyezése">
+<!ENTITY bbcode.settings.enable.xhtml "XHTML engedélyezése">
+<!ENTITY bbcode.settings.enable.html "HTML engedélyezése">
+<!ENTITY bbcode.settings.enable.symbol "SYMBOLS engedélyezése">
+<!ENTITY bbcode.color.choose "Kérem válasszon színt:">
+<!ENTITY bbcode.size "Betűméret">
+<!ENTITY bbcode.size.choose "Kérem válasszon betűméretet:">
+<!ENTITY bbcode.smilies "Emotikonok">
+<!ENTITY bbcode.smileskey "E">
+<!ENTITY bbcode.makemail "Címzettként">
+<!ENTITY bbcode.makeselectmail "Kijelölés címzettjeként">
+<!ENTITY bbcode.settings "Beállítások">
+<!ENTITY bbcode.settingskey "B">
+<!ENTITY bbcode.settings.tabs.custom "Egyedi elemek">
+<!ENTITY bbcode.settings.tabs.custom.key "E">
+<!ENTITY bbcode.settings.tabs.custom.desc "Ezen a lapon egyedi elemekkel bővíthető a környezetérzékeny menü. Kérem adja meg a használni kívánt elemek számát, majd definiálja ezen értékeket.">
+<!ENTITY bbcode.settings.tabs.custom.num "Egyedi elemek száma:">
+<!ENTITY bbcode.syntax "Szövegkiemelés">
+<!ENTITY bbcode.syntaxjs "Javascript kód">
+<!ENTITY bbcode.syntaxxml "XML kód">
+<!ENTITY bbcode.syntaxcss "CSS kód">

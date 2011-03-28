@@ -1,0 +1,79 @@
+<?xml version="1.0"?>
+
+<?xml-stylesheet href="chrome://global/skin" type="text/css"?>
+
+<!DOCTYPE dialog SYSTEM "chrome://bbcode/locale/bbcode.dtd">
+
+<dialog id="bbcode-choose-size" title="BBCode Size Picker"
+        xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul"
+        buttons="accept,cancel"
+        onload="onLoad(); sizeToContent();"
+        ondialogaccept="return qnAccept();"
+        ondialogcancel="onCancel();">
+
+  <script type="application/x-javascript" src="chrome://global/content/nsUserSettings.js" />
+
+  <script type="application/x-javascript">
+  <![CDATA[//
+  ////////////
+    function onLoad() {
+      var bbcodesize = window.arguments[1];
+      var re = window.arguments[0];
+      document.getElementById('BBCode-Font-Size').value = bbcodesize[0];
+      
+    }
+
+    function qnAccept() {
+      var bbcodesize = window.arguments[1];
+      var re = window.arguments[0];
+      //getAttribute("label")
+      bbcodesize[0] = document.getElementById('BBCode-Font-Size').value;
+      re[0] = true;
+      nsPreferences.setUnicharPref("bbcode.font.size", bbcodesize[0]);
+      return true;
+    }
+
+    function onCancel() {
+      var re = window.arguments[0]; 
+      re[0] = false;
+      return true;
+    }
+  ////////////
+  ]]>
+  </script>
+
+<hbox>
+  <vbox>
+    <image src="chrome://bbcode/skin/bbcode.png" width="32" height="32" />
+  </vbox>
+  <spacer width="4"/>
+  
+  <vbox>
+    <hbox>
+      <vbox>
+        <label value="&bbcode.size.choose;"/>
+			  <menulist label="&bbcode.size;" id="BBCode-Font-Size" editable="true">
+           <menupopup>
+            
+            <menuitem label="9"/>
+            <menuitem label="10"/>
+            <menuitem label="11"/>
+            <menuitem label="12" selected="true"/>
+            <menuitem label="13"/>
+            <menuitem label="14"/>
+            <menuitem label="15"/>
+            <menuitem label="16"/>
+            <menuitem label="17"/>
+            <menuitem label="18"/>
+           </menupopup>
+          </menulist>
+      </vbox>
+    </hbox>
+
+  </vbox>
+</hbox>
+
+</dialog>
+
+
+

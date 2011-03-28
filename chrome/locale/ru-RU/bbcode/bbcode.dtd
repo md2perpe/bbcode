@@ -1,0 +1,41 @@
+<!ENTITY bbcode.clipboard "Вставить как">
+<!ENTITY bbcode.clipkey "В"> 
+<!ENTITY bbcode.label "Цитату">
+<!ENTITY bbcode.image "Картинку">
+<!ENTITY bbcode.makeurl "Ссылку">
+<!ENTITY bbcode.makeselecturl "Сделать из выбранного текста ссылку">
+<!ENTITY bbcode.accel "Q">
+<!ENTITY bbcode.bold "Жирный">
+<!ENTITY bbcode.italic "Курсив">
+<!ENTITY bbcode.underline "Подчеркнуть">
+<!ENTITY bbcode.color "Цвет">
+<!ENTITY bbcode.code "Код">
+<!ENTITY bbcode.urlcode "Код">
+<!ENTITY bbcode.quoteselect "'Выделить цитату'">
+<!ENTITY bbcode.imagealt "Картинка с alt текстом">
+<!ENTITY bbcode.urltitle "Cсылка с названием">
+<!ENTITY bbcode.list "Создать список">
+<!ENTITY bbcode.strike "Вычеркнуть">
+<!ENTITY bbcode.settings.window "BBCode - Опции">
+<!ENTITY bbcode.settings.context "Контекстное меню">
+<!ENTITY bbcode.settings.enable.bbcode "Включить BBCode">
+<!ENTITY bbcode.settings.enable.xhtml "Включить XHTML">
+<!ENTITY bbcode.settings.enable.html "Включить HTML">
+<!ENTITY bbcode.settings.enable.symbol "Включить SYMBOLS">
+<!ENTITY bbcode.color.choose "Пожалуйста, выберите цвет:">
+<!ENTITY bbcode.size "Размер шрифта">
+<!ENTITY bbcode.size.choose "Пожалуйста, выберите размер шрифта:">
+<!ENTITY bbcode.smilies "Смайлики">
+<!ENTITY bbcode.smileskey "й">
+<!ENTITY bbcode.makemail "Адрес электронной почты">
+<!ENTITY bbcode.makeselectmail "Выделить как почтовый адрес">
+<!ENTITY bbcode.settings "Настройки">
+<!ENTITY bbcode.settingskey "Н">
+<!ENTITY bbcode.settings.tabs.custom "Дополнительные таги">
+<!ENTITY bbcode.settings.tabs.custom.key "Д">
+<!ENTITY bbcode.settings.tabs.custom.desc "Здесь вы можете добавить свои таги в контекстное меню. Выберите, сколько тагов вы хотите добавить и введите название каждого тага.">
+<!ENTITY bbcode.settings.tabs.custom.num "Количество дополнительных тагов:">
+<!ENTITY bbcode.syntax "Подсветка кода">
+<!ENTITY bbcode.syntaxjs "Javascript код">
+<!ENTITY bbcode.syntaxxml "XML код">
+<!ENTITY bbcode.syntaxcss "CSS код">

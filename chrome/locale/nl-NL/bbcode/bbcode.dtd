@@ -1,0 +1,41 @@
+<!ENTITY bbcode.clipboard "Klembord">
+<!ENTITY bbcode.clipkey "K">
+<!ENTITY bbcode.label "Citaat plakken">
+<!ENTITY bbcode.image "Afbeelding">
+<!ENTITY bbcode.makeurl "URL maken">
+<!ENTITY bbcode.makeselecturl "URL van selectie maken">
+<!ENTITY bbcode.accel "Q">
+<!ENTITY bbcode.bold "Vet">
+<!ENTITY bbcode.italic "Cursief">
+<!ENTITY bbcode.underline "Onderstrepen">
+<!ENTITY bbcode.color "Kleur">
+<!ENTITY bbcode.code "Code">
+<!ENTITY bbcode.urlcode "Code">
+<!ENTITY bbcode.quoteselect "''Selectie citeren''">
+<!ENTITY bbcode.imagealt "Afbeelding met alt-tekst">
+<!ENTITY bbcode.urltitle "URL met titel maken">
+<!ENTITY bbcode.list "Lijst aanmaken">
+<!ENTITY bbcode.strike "Doorhalen">
+<!ENTITY bbcode.settings.window "BBCode-instellingen">
+<!ENTITY bbcode.settings.context "Contextmenu">
+<!ENTITY bbcode.settings.enable.bbcode "BBCode inschakelen">
+<!ENTITY bbcode.settings.enable.xhtml "XHTML inschakelen">
+<!ENTITY bbcode.settings.enable.html "HTML inschakelen">
+<!ENTITY bbcode.settings.enable.symbol "Symbolen inschakelen">
+<!ENTITY bbcode.color.choose "Kies een kleur:">
+<!ENTITY bbcode.size "Lettergrootte">
+<!ENTITY bbcode.size.choose "Kies een lettergrootte:">
+<!ENTITY bbcode.smilies "Smilies">
+<!ENTITY bbcode.smileskey "S">
+<!ENTITY bbcode.makemail "E-mail-URL maken">
+<!ENTITY bbcode.makeselectmail "E-mail-URL van selectie maken">
+<!ENTITY bbcode.settings "Instellingen">
+<!ENTITY bbcode.settingskey "I">
+<!ENTITY bbcode.settings.tabs.custom "Aangepaste tags">
+<!ENTITY bbcode.settings.tabs.custom.key "A">
+<!ENTITY bbcode.settings.tabs.custom.desc "Hier kunt u aangepaste tags aan het contextmenu toevoegen. Kies hoeveel items u wilt toevoegen en vul daarna waarden in voor iedere tag.">
+<!ENTITY bbcode.settings.tabs.custom.num "Aantal aangepaste tags:">
+<!ENTITY bbcode.syntax "Codemarkering">
+<!ENTITY bbcode.syntaxjs "Javascript-code">
+<!ENTITY bbcode.syntaxxml "XML-code">
+<!ENTITY bbcode.syntaxcss "CSS-code">
